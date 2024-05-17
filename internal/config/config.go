@@ -6,8 +6,9 @@ import (
 )
 
 type Config struct {
-	MYSQL_URI   string `mapstructure:"MYSQL_URI"`
-	SERVER_PORT uint64 `mapstructure:"SERVER_PORT"`
+	MYSQL_URI       string `mapstructure:"MYSQL_URI"`
+	SERVER_PORT     uint64 `mapstructure:"SERVER_PORT"`
+	JWT_SIGN_SECRET string `mapstructure:"JWT_SIGN_SECRET"`
 }
 
 var C *Config
